@@ -1,51 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Uma breve descrição do que é o website que os mecanismos de pesquisa PODEM usar.-->
+    <meta name="description" content="Clube dos cachorros fofinhos">
     <title>Clube Patinhas</title>
 </head>
+
 <body>
-    <h1>Clube Patinhas</h1> <!-- h1 é uma tag de título, o correto é ter um único h1 por página - o assunto principal -->
-    <!-- Existem seis níveis de títulos, do h1 ao h6, não se pula ordem -->
-     <!-- 1 h1 por página; mas  h2, h3 ... pode ter mais  -->
-    <h2>Como cuidar</h2>
-    <h3>Aliemntação</h3>
-    <p>Escove os dentes <em>só com pastas para cães</em> </p>
-    <!-- em é textos em itálico-->
-    <h3>Passeios</h3>
-    <p>Filhotes só passeiam <strong>com as vacinas em dia</strong> </p>
-    <!-- p é parágrafo, strong é para deixar em negrito -->
+    <header> <!--O que aparece em cima de tudo-->
+        <h1>Clube Patinhas</h1>
+        <!-- h1 é uma tag de título, o correto é ter um único h1 por página - o assunto principal -->
+        <!-- Existem seis níveis de títulos, do h1 ao h6, não se pula ordem -->
+        <!-- 1 h1 por página; mas  h2, h3 ... pode ter mais  -->
+    </header>
 
-    <ol> <!-- Lista ordenada em números -->
-        <li>Pegar a guia</li>
-        <li>Passear</li>
-        <li>Dar água</li>
-    </ol>
-    <!-- A tag ol abre a lista e li são os elementos desta lista -->
+    <main> <!--Main é o principal do site-->
+        <h2>Como cuidar</h2>
+        <p>Um cachorro saudável precisa de comida certa, água fresca, passeios e carinho</p>
+        <h3>Aliemntação</h3>
+        <p>Ofereça ração adequada a idade e ao porte do cão e deixe sempre água limpa à disposição</p>
+        <p>Escove os dentes <em>só com pastas para cães</em> </p>
+        <ul>
+            <li>Filhotes comem várias vezes ao dia, em porções pequenas.</li>
+            <li>Adultos costumam comer duas vezes ao dia.</li>
+            <li>Alguns alimentos humanos faz mal ao cães</li>
+            <ul>
+                <li>Chocolate</li>
+                <li>Uva e Uva-passa</li>
+                <li>Cebola e alho</li>
+            </ul>
+        </ul>
+        <!-- em é textos em itálico-->
+        <h3>Passeios</h3>
+        <p>Filhotes só passeiam <strong>com as vacinas em dia</strong> </p>
+        <!-- p é parágrafo, strong é para deixar em negrito -->
+        <p>Passeios são importantes porque gastam energia, fortalece os músculos e ajuda o cão a conviver com outras
+            pessoas e animais.</p>
+        <ol> <!-- Lista ordenada em números -->
+            <li>Pegar a guia.</li>
+            <li>Passear, de preferência fora dos horários mais quentes.</li>
+            <li>Dar água ao voltar de casa.</li>
+        </ol>
+        <!-- A tag ol abre a lista e li são os elementos desta lista -->
 
-    <h2>Raças</h2>
-    <ul> <!-- Lista não definida. A tag ul abre a lista e li são os elementos dessa lista-->
-        <li>Beagle</li> <!-- Coisas que vou mostrar na lista, nesse caso, lista com pontinho -->
-        <li>Poodle</li>
-        <li>Vira-lata</li>
-    </ul>
+        <h2>Raças</h2>
+        <ul> <!-- Lista não definida. A tag ul abre a lista e li são os elementos dessa lista-->
+            <li>Beagle</li> <!-- Coisas que vou mostrar na lista, nesse caso, lista com pontinho -->
+            <figure>
+                <img src="beagle.jfif" alt="O beagle mais maligno do mundo" height="600" width="800">
+                <figcaption>"O beagle
+                    mais maligno do mundo"</figcaption>
+            </figure>
+            <li>Resendog</li>
+            <figure>
+                <img src="resendog.png" alt="Resenha." height="600" width="800">
+                <figcaption>"Rese<br>nha"</figcaption> <!--<br> Pula linha-->
+            </figure>
+            <li>Poodle </li>
+            <figure>
+                <img src="poodle.webp" alt="O poodle mais fofo do mundo" height="600" width="800">
+                <figcaption>"O poodle mais fofo do mundo"</figcaption>
+                <li>Resendog</li>
+            </figure>
+            <!-- height define altura da imagem wifth a largura em pixels. Utilizamos figure quando a imagem que inserimos no website tiver relação direta com um texto dele. Por exemplo, em trabalhos que comentam sobre dados estatísticos e, no texto, informam "video / gráfico / tabela a seguir". Quando a imagem no website é meramente ilustrativa, utilizamos só o img. Pode-se adicionar links de fotos no img src. O atributo alt deve sempre estar informando uma descrição da imagem, vai aparecer o alt caso a imagem não carregue ou para leitores de tela.-->
+        </ul>
 
-    <dl> 
-        <dt>Filhote</dt>
-        <dd>Cão com menos de um ano.</dd>
-    </dl>
-    <!--Usado para criar uma definição -->
-    <!-- A tag dt é para o título e dd para descrição -->
+        <dl>
+            <dt>Filhote</dt>
+            <dd>Cão com menos de um ano.</dd>
+        </dl>
+        <!--Usado para criar uma definição -->
+        <!-- A tag dt é para o título e dd para descrição -->
 
-    <a href="https://pt.wikipedia.org/wiki/C%C3%A3o" target="_blank" rel="noopener noreferrer":>Sobre cães - Wikipédia</a>
-    <!-- A tag é para criar links -->
-    <!-- No atributo hre, colocamos o endereço da página que queremos redirecionar -->
-    <!-- O atributo target é usado para indicar se, ao clicar no link, a página abrirá na mesma aba/janela ou em uma ova aba/nova janela -->
-    <!-- O atributo rel="noopener no refeerer" define que, ao clicar no link e abrir uma nova aba, ele não poderá manipular a aba original (reverse tabnabbing) e impedirá que o site de destino saiba de qual página veio o tráfego original -->
+        <a href="https://pt.wikipedia.org/wiki/C%C3%A3o" target="_blank" rel="noopener noreferrer" :>Sobre cães -
+            Wikipédia</a>
+        <!-- A tag é para criar links -->
+        <!-- No atributo hre, colocamos o endereço da página que queremos redirecionar -->
+        <!-- O atributo target é usado para indicar se, ao clicar no link, a página abrirá na mesma aba/janela ou em uma ova aba/nova janela -->
+        <!-- O atributo rel="noopener no refeerer" define que, ao clicar no link e abrir uma nova aba, ele não poderá manipular a aba original (reverse tabnabbing) e impedirá que o site de destino saiba de qual página veio o tráfego original -->
 
-    <img src="orelha.jpg" alt="Um cachorro caramelo, representante oficial do Brasil."> 
-    <!-- A tag img é para colocar imagem no HTML -->
-    <!-- O atributo alt deve sempre estar informado com uma descrição -->
+        <img src="orelha.jpg" alt="Um cachorro caramelo, representante oficial do Brasil.">
+        <!-- A tag img é para colocar imagem no HTML -->
+        <!-- O atributo alt deve sempre estar informado com uma descrição -->
+
+        <h2>Passeios da semana</h2>
+
+        <table border="2">
+            <tr> <!--Linha de uma tabela-->
+                <th>Cachorro</th> <!--Cabeçlho da tabela-->
+                <th>Raça</th>
+                <th>Passeio</th>
+            </tr>
+            <tr>
+                <td>luiz botameddi André</td>
+                <td>Beagle</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Gabriella Cunha Eduarda</td>
+                <td>Poodle</td>
+                <td>69</td>
+            </tr>
+            <tr>
+                <td>Gustavo Campoys</td>
+                <td>Resendog</td>
+                <td>67</td>
+            </tr>
+        </table>
+
+        <h2>Entre em contato:</h2>
+
+        <form> <!--Form abre o formulário-->
+            <label for="nome">Nome:</label> <!--Label é o título do campo do formulário-->
+            <input type="text" id="nome" name="nome"> <!--Input é o espaço criado para você digitar a informação -->
+            <!--Atenção para os atributos ide e name. O atributo id vai funcionar como um CPF: cada elemento do HTML possui seu próprio CPF. Isto vai nos ajudar, depois, para encontrar estes elementos no JavaScript. O name é importante quando vamos enviar os dados do formulário para gravação, pois ele define o 'nome da variável' que va armazenar no dado. -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea> <!--Name é nome de variável, ID é o CPF do campo-->
+            <!--A tag textarea é uma área de digitação para textos longos-->
+            <br>
+            <button type="submit">Enviar</button>
+            <!-- O button type="submit" tem a função de, quando clicado, enviar as informações do formuláro para o servidor -->
+
+        </form>
+
+    </main>
+    
+    <footer>
+        <p>Clube Patinhas - Site criado para fins educativos. </p>
+        <p>&copy; 2026 - Clube Patinhas. Todos os direitos reservados. </p> <!-- &copy; É O "c" De copyrighting-->
+    </footer>
 </body>
+
 </html>
